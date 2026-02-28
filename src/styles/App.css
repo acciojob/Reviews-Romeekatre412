@@ -1,12 +1,32 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+.review-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 
-button{
-    color: #27aedb;
+.person-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.review-text {
+  flex: 1;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .review-content {
+    flex-direction: column;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+  }
+
+  .review-text {
+    text-align: center;
+  }
+
+  .person-img {
+    width: 200px;
+    height: 200px;
+  }
 }
